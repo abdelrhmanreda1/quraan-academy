@@ -38,67 +38,70 @@ export function Layout({ children }: { children: React.ReactNode }) {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-background text-foreground selection:bg-primary/20">
+    <div className="min-h-screen flex flex-col font-sans bg-background text-foreground selection:bg-primary/20 ">
       {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-4 text-sm hidden md:flex justify-between items-center z-50 relative border-b border-white/10">
-        <div className="flex gap-6">
-          <span className="flex items-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer">
-            <Phone className="w-4 h-4 text-secondary" /> +1 (555) 123-4567
-          </span>
-          <span className="flex items-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer">
-            <Globe className="w-4 h-4 text-secondary" /> Multi-language Support
-          </span>
-        </div>
-        <div className="flex items-center gap-6">
-          <div className="flex gap-4 border-r border-white/10 pr-6">
-            <a
-              href={SOCIAL_LINKS.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/70 hover:text-secondary transition-colors"
-            >
-              <Instagram className="w-4 h-4" />
-            </a>
-            <a
-              href={SOCIAL_LINKS.youtube}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/70 hover:text-secondary transition-colors"
-            >
-              <Youtube className="w-4 h-4" />
-            </a>
-            <a
-              href={SOCIAL_LINKS.tiktok}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/70 hover:text-secondary transition-colors"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-4 h-4"
-              >
-                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
-              </svg>
-            </a>
+      <div className=" bg-primary text-primary-foreground py-2 px-4 text-sm hidden md:flex justify-between items-center z-50 relative border-b border-white/10">
+        <div className="w-[95%] mx-auto flex justify-between">
+          <div className="flex gap-6  ">
+            <span className="flex items-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer">
+              <Phone className="w-4 h-4 text-secondary" /> +1 (555) 123-4567
+            </span>
+            <span className="flex items-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer">
+              <Globe className="w-4 h-4 text-secondary" /> Multi-language
+              Support
+            </span>
           </div>
-          <div className="flex gap-4">
-            <a
-              href="#"
-              className="hover:text-secondary transition-colors font-medium"
-            >
-              Login
-            </a>
-            <a
-              href="#"
-              className="hover:text-secondary transition-colors font-medium"
-            >
-              Register
-            </a>
+          <div className="flex items-center gap-6">
+            <div className="flex gap-4 border-r border-white/10 pr-6">
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-secondary transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-secondary transition-colors"
+              >
+                <Youtube className="w-4 h-4" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-secondary transition-colors"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-4 h-4"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
+              </a>
+            </div>
+            <div className="flex gap-4">
+              <a
+                href="#"
+                className="hover:text-secondary transition-colors font-medium"
+              >
+                Login
+              </a>
+              <a
+                href="#"
+                className="hover:text-secondary transition-colors font-medium"
+              >
+                Register
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -112,7 +115,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             : "bg-primary py-4"
         )}
       >
-        <div className="container mx-auto  flex items-center justify-between">
+        <div className=" md:max-w-7xl mx-auto  flex items-center justify-between px-4 md:px-0">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-secondary font-serif font-bold text-2xl border border-white/20 group-hover:scale-105 transition-transform backdrop-blur-sm">
@@ -208,7 +211,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {/* Pattern Overlay */}
         <div className="absolute inset-0 bg-pattern opacity-5 pointer-events-none" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="space-y-6">
               <div className="flex items-center gap-3">
@@ -417,7 +420,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           className="fixed bottom-6 right-6 z-50 bg-[#168a40] text-white p-2 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center ring-4 ring-[#25D366]/30"
           aria-label="Chat on WhatsApp"
         >
-        <img src="/images/whatsapp.png" alt="whatsapp icon" className="w-12 h-12"/>
+          <img
+            src="/images/whatsapp.png"
+            alt="whatsapp icon"
+            className="w-12 h-12"
+          />
         </a>
       </footer>
     </div>
