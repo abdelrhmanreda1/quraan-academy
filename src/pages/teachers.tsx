@@ -10,7 +10,7 @@ export default function Teachers() {
     <Layout>
       <div className="bg-primary py-20 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-pattern opacity-10" />
-        <div className="container mx-auto px-4 text-center space-y-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 text-center space-y-6 relative z-10">
           <Badge variant="outline" className="border-secondary text-secondary">Our Faculty</Badge>
           <h1 className="text-4xl md:text-5xl font-serif font-bold">Meet Our Expert Tutors</h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
@@ -19,7 +19,7 @@ export default function Teachers() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-20">
+      <div className="max-w-7xl mx-auto px-4 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {TEACHERS.map((teacher) => (
             <Card key={teacher.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 border-none shadow-md flex flex-col">

@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <Layout>
       <div className="bg-primary/5 py-12">
-        <div className="container mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-serif font-bold text-primary mb-4">Get in Touch</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             We are here to help you with any questions about our courses, teachers, or technical issues.
@@ -17,7 +17,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="space-y-8">

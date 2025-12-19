@@ -9,7 +9,7 @@ export default function FAQ() {
   return (
     <Layout>
       <div className="bg-primary/5 py-16">
-        <div className="container mx-auto px-4 text-center space-y-4">
+        <div className="max-w-7xl mx-auto px-4 text-center space-y-4">
           <h1 className="text-4xl font-serif font-bold text-primary">Frequently Asked Questions</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Find answers to common questions about our courses, scheduling, payments, and technical requirements.
@@ -22,7 +22,7 @@ export default function FAQ() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 max-w-3xl">
+      <div className="max-w-7xl mx-auto px-4 py-16 max-w-3xl">
         <div className="grid gap-8">
            <div className="bg-white p-8 rounded-2xl shadow-sm border border-border">
               <h2 className="text-2xl font-serif font-bold text-primary mb-6">General Inquiries</h2>

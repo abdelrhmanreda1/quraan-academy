@@ -53,7 +53,7 @@ export default function Home() {
 
         <div
           style={{ margin: "0 auto" }}
-          className="container relative z-10 px-4 py-20"
+          className="max-w-7xl relative z-10 px-4 py-20"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -173,7 +173,7 @@ export default function Home() {
 
       {/* Advanced Search Bar (Requested) */}
       <section className="py-8 bg-muted/50 border-b border-border">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="bg-white rounded-xl shadow-sm p-2 flex items-center border border-border">
             <Search className="w-5 h-5 text-muted-foreground ml-3" />
             <input
@@ -187,7 +187,7 @@ export default function Home() {
 
       {/* Learning Paths Section (Guided Learning) */}
       <section className="py-24 bg-background relative">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">
               Guided Learning for a Meaningful Life
@@ -251,7 +251,7 @@ export default function Home() {
 
       {/* Featured Courses Grid */}
       <section className="py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-end mb-12">
             <div>
               <Badge
@@ -332,7 +332,7 @@ export default function Home() {
 
       {/* Gallery Section (Requested) */}
       <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-serif font-bold text-primary">
               Student Gallery
@@ -369,7 +369,7 @@ export default function Home() {
 
       {/* Free Recorded Courses Section (Requested) */}
       <section className="py-24 bg-primary text-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-end mb-12">
             <div>
               <h2 className="text-4xl font-serif font-bold">
@@ -412,7 +412,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="py-24 bg-background relative overflow-hidden">
-        <div className="container mx-auto px-4 text-center max-w-7xl">
+        <div className="max-w-7xl mx-auto px-4 text-center max-w-7xl">
           <Badge variant="outline" className="mb-4 border-primary text-primary">
             Testimonials
           </Badge>
@@ -480,7 +480,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-20">
-        <div className="container mx-auto ">
+        <div className="max-w-7xl mx-auto ">
           <div className="bg-primary rounded-[2.5rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-[url('/attached_assets/pattern.png')] opacity-10 bg-repeat" />
             <div className="absolute top-0 left-0 w-64 h-64 bg-secondary/30 blur-[80px] rounded-full" />

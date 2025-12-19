@@ -14,7 +14,7 @@ export default function About() {
           <img src={heroImage} alt="Academy Interior" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
         </div>
-        <div className="container mx-auto px-4 relative z-10 text-center">
+        <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
            <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">Preserving the Legacy</h1>
            <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
              Quraan Academy is a premier online institute dedicated to spreading the light of the Quran 
@@ -24,7 +24,7 @@ export default function About() {
       </div>
 
       {/* Mission & Vision */}
-      <div className="container mx-auto px-4 py-20">
+      <div className="max-w-7xl mx-auto px-4 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
@@ -67,7 +67,7 @@ export default function About() {
 
       {/* Gallery Section */}
       <div className="bg-muted/30 py-20">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-primary mb-4">Life at Quraan Academy</h2>
             <p className="text-muted-foreground">Glimpses of our vibrant learning community</p>
@@ -91,7 +91,7 @@ export default function About() {
       </div>
       
       {/* Stats/Map Placeholder */}
-      <div className="container mx-auto px-4 py-20 text-center">
+      <div className="max-w-7xl mx-auto px-4 py-20 text-center">
          <h2 className="text-3xl font-serif font-bold text-primary mb-8">A Global Community</h2>
          <div className="bg-primary/5 rounded-3xl p-12 flex flex-col items-center justify-center min-h-[400px] relative overflow-hidden">
             <Globe className="w-64 h-64 text-primary/10 absolute animate-pulse" />

@@ -24,7 +24,7 @@ export default function CourseDetail() {
         <div className="absolute inset-0 bg-pattern opacity-10 pointer-events-none" />
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-black/20 to-transparent" />
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
           <Link href="/courses">
              <a className="inline-flex items-center text-white/70 hover:text-white mb-8 transition-colors text-sm font-medium">
                <ArrowLeft className="w-4 h-4 mr-2" /> Back to All Courses
@@ -100,7 +100,7 @@ export default function CourseDetail() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-12">

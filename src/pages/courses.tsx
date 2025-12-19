@@ -16,7 +16,7 @@ export default function Courses() {
     <Layout>
       {/* Header */}
       <div className="bg-primary/5 py-16">
-        <div className="container mx-auto px-4 text-center space-y-4">
+        <div className="max-w-7xl mx-auto px-4 text-center space-y-4">
           <Badge variant="outline" className="border-primary text-primary">Academic Programs</Badge>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary">Explore Our Courses</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -27,7 +27,7 @@ export default function Courses() {
 
       {/* Filter & Search Bar */}
       <div className="sticky top-[72px] z-30 bg-background/80 backdrop-blur-md border-b border-border py-4">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row gap-4 justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-4 justify-between items-center">
           <div className="relative w-full md:w-96">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <Input placeholder="Search for a course..." className="pl-10 bg-white" />
@@ -49,7 +49,7 @@ export default function Courses() {
       </div>
 
       {/* Course Grid */}
-      <div className="container mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {COURSES.map((course) => (
             <Link key={course.id} href={`/courses/${course.slug}`}>

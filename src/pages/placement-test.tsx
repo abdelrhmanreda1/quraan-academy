@@ -27,7 +27,7 @@ export default function PlacementTest() {
   if (isComplete) {
     return (
       <Layout>
-        <div className="container mx-auto px-4 py-20 text-center max-w-2xl">
+        <div className="max-w-7xl mx-auto px-4 py-20 text-center max-w-2xl">
            <motion.div 
              initial={{ scale: 0.8, opacity: 0 }}
              animate={{ scale: 1, opacity: 1 }}
@@ -64,13 +64,13 @@ export default function PlacementTest() {
   return (
     <Layout>
       <div className="bg-primary/5 py-12">
-        <div className="container mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-3xl font-serif font-bold text-primary">Free Placement Test</h1>
           <p className="text-muted-foreground mt-2">Let's find the perfect starting point for your journey.</p>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 max-w-2xl">
+      <div className="max-w-7xl mx-auto px-4 py-12 max-w-2xl">
          <Card className="border-none shadow-lg">
             <CardContent className="p-8">
                <div className="mb-8 flex justify-between items-center text-sm font-medium text-muted-foreground">

@@ -11,7 +11,7 @@ export default function Pricing() {
     <Layout>
       <div className="bg-primary text-primary-foreground py-24 relative overflow-hidden">
          <div className="absolute inset-0 bg-pattern opacity-10" />
-         <div className="container mx-auto px-4 text-center relative z-10 space-y-6">
+         <div className="max-w-7xl mx-auto px-4 text-center relative z-10 space-y-6">
            <h1 className="text-4xl md:text-6xl font-serif font-bold">Affordable Quran Education</h1>
            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
              Choose a plan that fits your schedule and budget. No hidden fees.
@@ -19,7 +19,7 @@ export default function Pricing() {
          </div>
       </div>
 
-      <div className="container mx-auto px-4 -mt-16 relative z-20">
+      <div className="max-w-7xl mx-auto px-4 -mt-16 relative z-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Basic Plan */}
           <Card className="flex flex-col border-none shadow-xl">
